@@ -62,12 +62,51 @@ for ($i = 0; $i < 5; $i++) {
 echo "<br>";
 
 // pattern 7
-/*for ($i = 0; $i < 5; $i++) { 
-	for ($j = 0; $j <= $i; $j++) { 
+for ($i = 0; $i < 5; $i++) { 
+	for ($j = $i; $j < 5; $j++) { 
+		echo "&nbsp&nbsp&nbsp";
+	}
+	for ($k = 0; $k <= $i; $k++) { 
+		echo ' * ';
+	}
+	echo "<br>";
+}
+echo "<br>";
+
+// pattern 8
+for ($i = 0; $i < 5; $i++) { 
+	for ($j = $i; $j < 5; $j++) { 
+		echo "&nbsp&nbsp&nbsp";
+	}
+	for ($k = 0; $k <= $j; $k++) { 
 		echo " * ";
 	}
 	echo "<br>";
-}*/
+}
 echo "<br>";
 
+// pattern 9
+for ($i = 0; $i < 5; $i++) { 
+	for ($j = $i; $j < 5; $j++) { 
+		echo "&nbsp&nbsp&nbsp";
+		for ($k = $j; $k < 5; $k++) { 
+			echo ' * ';
+		}
+		echo '<br>';
+	}
+	//echo '<br>';
+}
+echo "<br>";
+
+// pattern 10
+for ($i = 0; $i < 5; $i++) { 
+	for ($j = 0; $j <= $i; $j++) { 
+		echo "&nbsp&nbsp&nbsp";
+		for ($k = $j; $k < 5; $k++) { 
+			echo ' * ';
+		}
+		echo '<br>';
+	}
+}
+echo "<br>";
 ?>
