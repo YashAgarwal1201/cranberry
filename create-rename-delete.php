@@ -27,8 +27,11 @@ if (is_dir($directory_path)) {
 	fwrite($file_pointer, 'a very long long line of content'); // write some content in file
 	fclose($file_pointer); // close the file
 
-	readfile($file_name); // read the content of file just created
-	unlink($file_name); // delete the file just created (optional)
+	$new_file_name = $directory_path . 'newfile.txt';
+	rename($file_name, $new_file_name);
+
+	readfile($new_file_name); // read the content of file just created
+	unlink($new_file_name); // delete the file just created (optional)
 	rmdir($directory_path); // delete the directory just created (optional)
 }
 
