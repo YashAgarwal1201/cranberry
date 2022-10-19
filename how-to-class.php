@@ -17,15 +17,15 @@ class Example {
 		$this->protected_variable = $protected_variable;
 	}
 
-	public function display() {
+	public function example_display() {
 		echo $this->private_variable . '<br>' . $this->public_variable . '<br>' . $this->protected_variable;
 	}
 
-	protected function display2() {
+	protected function example_display2() {
 		echo $this->private_variable . '<br>' . $this->public_variable . '<br>' . $this->protected_variable;
 	}
 
-	private function display3() {
+	private function example_display3() {
 		echo $this->private_variable . '<br>' . $this->public_variable . '<br>' . $this->protected_variable;
 	}
 }
@@ -43,7 +43,15 @@ class Example2 extends Example {
 		$this->protected_variable2 = $protected_variable2;
 	}
 
-
+	public function example2_display() {
+		echo $this->private_variable2 . '<br>' . $this->public_variable2 . '<br>' . $this->protected_variable2;
+	}
+	private function example2_display() {
+		echo $this->private_variable2 . '<br>' . $this->public_variable2 . '<br>' . $this->protected_variable2;
+	}
+	protected function example2_display() {
+		echo $this->private_variable2 . '<br>' . $this->public_variable2 . '<br>' . $this->protected_variable2;
+	}
 
 }
 
