@@ -22,6 +22,7 @@ button, input, textarea, iframe {
 	resize: none;
 	background: none;
 	color: black;
+	width: 500px;
 }
 
 a {
